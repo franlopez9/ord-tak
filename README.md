@@ -1,18 +1,25 @@
 # 🫓 ord-tak — POS para Pupuserías
 
-App sencilla para tomar órdenes y llevar la caja de una pupusería desde el celular.
+App sencilla para **tomar órdenes** y llevar el control del día en una pupusería, desde el celular.
 
 👉 **Probala aquí:** https://franlopez9.github.io/ord-tak/
 
-## ¿Qué hace?
+> 🚧 **En desarrollo.** Por ahora la app sirve para tomar órdenes y llevar las cuentas. **No procesa pagos**: solo registra cómo pagó el cliente. La integración con pasarela de pago viene más adelante.
+
+## ¿Qué hace hoy?
 
 - **Órdenes por mesa, para llevar o delivery** (12 mesas + barra)
 - **Comanda táctil** con pupusas de maíz o arroz, y bebidas
-- **Formas de pago:** efectivo, Wompi, transferencia o fiado
+- **Registro de forma de pago:** efectivo, Wompi, transferencia o fiado
 - **Dividir la cuenta** entre varias personas
 - **Gastos del día:** quesillo, masa, gas, verduras, desechables, ayudante
 - **Libreta de fiados** para anotar y cobrar deudas
 - **Cierre de caja:** cuánto efectivo debe haber al final del día
+
+## Próximamente
+
+- [ ] Integración con pasarela de pago (cobro directo desde la app)
+- [ ] Guardar datos en la nube para usar en varios dispositivos
 
 ## Cómo usarla
 
@@ -28,3 +35,18 @@ Todo está en `index.html`. Buscá la lista `MENU` y editá nombres o precios:
 
 ```js
 { id: 'queso', nombre: 'Queso', emoji: '🧀', precioMaiz: 1.25, precioArroz: 1.50, esPupusa: true },
+```
+
+**Importante:** el `id` no puede llevar guion bajo (`_`).
+
+## ¿Querés mejorarla?
+
+1. Hacé **Fork** de este repositorio.
+2. Hacé tus cambios en tu copia.
+3. Mandame un **Pull Request** con lo que cambiaste y por qué.
+
+## Hecha con
+
+- HTML + React 18
+- Tailwind CSS
+- Todo en un solo archivo (`index.html`)
